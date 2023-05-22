@@ -27,7 +27,7 @@ def main():
         cost = st.slider(
             "Cost per observation (100 = - 1 rank per observation)", 0, 100, 10
         )
-        cost = cost / 100
+        cost = cost / 100.0
         num_simulations = st.slider("Number of simulations", 1, 1000, 100)
         stopping_strategy = st.slider(
             "Stop after what percentage of candidates seen", 0, 100, 37
